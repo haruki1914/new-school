@@ -180,14 +180,20 @@ button{
 
             <p>
 
-                space
+                この授業では、クラウドサービスの仕組みやchromebookの特徴を知ります。
 
             </p>
 
             <ul>
 
                 <li>
-                    space
+                    クラウドサービス
+                </li>
+                <li>
+                    Google drive
+                </li>
+                <li>
+                chromebook
                 </li>
 
             </ul>
@@ -203,221 +209,39 @@ button{
             </div>
 
             <a class="resource-link"
-            href="ここにURL"
+            href="https://kahoot.it/"
             target="_blank">
 
-                URLの名前
+                Kahoot!
 
             </a>
+            <a class="resource-link"
+            href="https://www.lenovo.com/jp/ja/articletop/laptop/chromebook-demerit/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+            target="_blank">
 
+                Chromebook
+
+            </a>
+            <a class="resource-link"
+            <!-- href="https://books.google.co.jp/books?hl=ja&lr=lang_ja%7Clang_en&id=s3MTBwAAQBAJ&oi=fnd&pg=PA3&dq=google+chromebook+design+thinking&ots=t7ppANB6Dq&sig=GXh3rP9-lqCl6BMTVgwGmCRyW9U&redir_esc=y#v=onepage&q&f=true" -->
+            target="_blank">
+
+                Chromebookの操作マニュアル(英語)
+        
+
+            </a>
+            <a class="resource-link"
+            <!-- href="https://ci.nii.ac.jp/books/" -->
+            target="_blank">
+
+                書籍検索
+        
+
+            </a>
            
 
         </div>
 
-        <!-- テスト -->
-
-        <div class="section">
-
-            <div class="section-title">
-                📝 理解度チェック
-            </div>
-
-            <!-- 問題1 -->
-
-            <div class="question">
-
-                <p>
-                    1.Space
-                </p>
-
-                <label>
-                    <input type="radio"
-                    name="q1"
-                    value="0">
-
-                    space
-                </label>
-
-                <label>
-                    <input type="radio"
-                    name="q1"
-                    value="1">
-
-                    space
-                </label>
-
-            </div>
-
-            <!-- 問題2 -->
-
-            <div class="question">
-
-                <p>
-                    2.space
-                </p>
-
-                <label>
-                    <input type="radio"
-                    name="q2"
-                    value="1">
-
-                    space
-                </label>
-
-                <label>
-                    <input type="radio"
-                    name="q2"
-                    value="0">
-
-                    space
-                </label>
-
-            </div>
-
-            <!-- 問題3 -->
-
-            <div class="question">
-
-                <p>
-                    3.space
-                </p>
-
-                <label>
-                    <input type="radio"
-                    name="q3"
-                    value="0">
-
-                    space
-                </label>
-
-                <label>
-                    <input type="radio"
-                    name="q3"
-                    value="1">
-
-                    space
-                </label>
-
-            </div>
-
-            <!-- 問題4 -->
-
-            <div class="question">
-
-                <p>
-                    4.space
-                </p>
-
-                <label>
-                    <input type="radio"
-                    name="q4"
-                    value="0">
-
-                    space
-                </label>
-
-                <label>
-                    <input type="radio"
-                    name="q4"
-                    value="1">
-
-                    space
-                </label>
-
-            </div>
-
-            <!-- 問題5 -->
-
-            <div class="question">
-
-                <p>
-                    5.space
-                </p>
-
-                <label>
-                    <input type="radio"
-                    name="q5"
-                    value="0">
-
-                    space
-                </label>
-
-                <label>
-                    <input type="radio"
-                    name="q5"
-                    value="1">
-
-                    space
-                </label>
-
-            </div>
-
-            <button onclick="checkQuiz()">
-
-                採点する
-
-            </button>
-
-            <div class="result"
-            id="result"></div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<script>
-
-function checkQuiz(){
-
-    let score = 0;
-
-    const questions = [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
-    ];
-
-    questions.forEach(q => {
-
-        const selected =
-        document.querySelector(
-        `input[name="${q}"]:checked`
-        );
-
-        if(selected &&
-        selected.value === "1"){
-
-            score++;
-        }
-    });
-
-    const result =
-    document.getElementById("result");
-
-    result.style.display = "block";
-
-    if(score === 5){
-
-        result.innerHTML =
-        "🎉 5問正解！完璧です！";
-
-    }else if(score >= 3){
-
-        result.innerHTML =
-        `👍 ${score}/5問正解！よく理解できています！`;
-
-    }else{
-
-        result.innerHTML =
-        `📚 ${score}/5問正解！復習してみよう！`;
-    }
-}
-
-</script>
 
 </body>
 </html>
